@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Miasta i Gminy - Województwo Podkarpackie</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+<style>
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Montserrat', sans-serif; background: #f5f7fa; color: #004aad; overflow-x: hidden; }
+
+
+.hero { position: relative; height: 80vh; display: flex; 
+  align-items: center;
+   justify-content: center;
+   text-align: center;
+    overflow: hidden; color: white;
+   }
+.hero::before { content: ""; position: absolute; 
+top: 0; left: 0; width: 100%;
+ height: 100%; background: rgba(0, 0, 0, 0.55); z-index: 1;
+ }
+.hero img { position: absolute; top: 0;
+   left: 0; width: 100%;
+    height: 120%;
+    object-fit: cover; filter: brightness(80%); z-index: 0;
+     animation: parallax 16s infinite alternate ease-in-out; 
+    }
+
+.hero-text { position: relative;
+   z-index: 2; padding: 0 20px; animation: fadeInUp 1.8s ease;
+   color: #fff;
+   }
+.hero-text h1 { font-size: 3rem;
+   text-transform: uppercase; 
+   letter-spacing: 2px;
+    margin-bottom: 10px;
+   }
+.hero-text h3 { font-size: 1.5rem; 
+  font-weight: 400; margin-bottom: 15px;
+   color: #ffd700; 
+  }
+.hero-text p { font-size: 1.1rem;
+   margin-bottom: 25px; max-width: 600px;
+    margin-left: auto; margin-right: auto; 
+  }
+
+.btn { display: inline-block;
+   padding: 12px 28px;
+    border-radius: 30px; background: #ffd700; color: #004aad;
+     font-weight: 600; text-decoration: none;
+      transition: 0.3s; 
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+       margin: 5px; 
+      }
+.btn:hover { background: #fff;
+   color: #004aad;
+    transform: scale(1.07);
+   }
+
+
+.info { padding: 90px 20px;
+   max-width: 1000px; margin: auto;
+    text-align: center; animation: fadeIn 2s ease;
+   }
+.info h2 { font-size: 2.3rem;
+   margin-bottom: 25px; 
+   color: #004aad; 
+  }
+.info p { font-size: 1.1rem;
+   color: #004aad;
+    text-align: justify;
+     line-height: 1.8; 
+    }
+
+
+.attractions { background: #fff; padding: 90px 20px; text-align: center; }
+.attractions h2 { font-size: 2.3rem; margin-bottom: 50px; color: #004aad; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 35px; max-width: 1100px; margin: auto; }
+
+
+.card { position: relative; background: #fff;
+   border-radius: 18px; 
+   overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+     transition: transform 0.4s, box-shadow 0.4s;
+     }
+.card a { text-decoration: none; 
+  display: block; } 
+.card img { width: 100%; height: 230px; object-fit: cover;
+   transition: transform 0.4s; 
+  }
+.card:hover img { transform: scale(1.1); 
+}
+.card:hover { 
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+.card h3 { 
+    padding: 18px; 
+    font-size: 1.3rem; 
+    color: #004aad; 
+}
+
+
+footer { 
+    background: #004aad; 
+    color: #fff; 
+    text-align: center; 
+    padding: 25px 10px; 
+    font-size: 0.95rem; 
+    letter-spacing: 0.5px; 
+}
+</style>
+</head>
+<body>
+<header class="hero">
+<img src="Karpaty.jpg" alt="Atrakcje Podkarpacia" />
+<div class="hero-text">
+<h1>Miasta i gminy</h1>
+<h3>Kraina natury, historii i przygody</h3>
+<p>Odkryj magiczne miejsca – od dzikich Bieszczadów po zamki i cerkwie UNESCO.</p>
+<a href="index.html" class="btn">Powrót na stronę główną</a>
+</div>
+</header>
+<section class="info">
+<h2>Opis</h2>
+<p> Województwo podkarpackie, położone w południowo-wschodniej Polsce, charakteryzuje się zróżnicowanym podziałem administracyjnym i geograficznym. Region ten dzieli się na 21 powiatów ziemskich oraz 4 miasta na prawach powiatu, które łącznie obejmują 159 gmin (w tym gminy miejskie, miejsko-wiejskie i wiejskie) oraz 50 miast </p>
+</section>
+<section class="attractions">
+<h2>Miasta</h2>
+<div class="cards">
+<div class="card">
+<a href="https://pl.wikipedia.org/wiki/Rzesz%C3%B3w">
+<img src="Rzeszów.jpg" alt="Rzeszów">
+<h3>Rzeszów</h3>
+</a>
+</div>
+<div class="card">
+<a href="https://pl.wikipedia.org/wiki/Tarnobrzeg">
+<img src="Tarnobrzeg.jpg" alt="Tarnobrzeg">
+<h3>Tarnobrzeg</h3>
+</a>
+</div>
+<div class="card">
+<a href="https://pl.wikipedia.org/wiki/Krosno">
+<img src="krosnoo.jpg" alt="Krosno">
+<h3>Krosno</h3>
+</a>
+</div>
+<div class="card">
+<a href="https://pl.wikipedia.org/wiki/Stalowa_Wola">
+<img src="StalowaWola.jpg" alt="Stalowa Wola">
+<h3>Stalowa Wola</h3>
+</a>
+</div>
+<div class="card">
+<a href="https://pl.wikipedia.org/wiki/Mielec">
+<img src="Mielec.jpg" alt="Mielec">
+<h3>Mielec</h3>
+</a>
+</div>
+<div class="card">
+<a href="https://pl.wikipedia.org/wiki/D%C4%99bica">
+<img src="Dębica.jpg" alt="Dębica">
+<h3>Dębica</h3>
+</a>
+</div>
+<div class="card">
+<a href="https://pl.wikipedia.org/wiki/Jaros%C5%82aw_(wojew%C3%B3dztwo_podkarpackie)">
+<img src="jaroslaw.jpg" alt="Jarosław">
+<h3>Jarosław</h3>
+</a>
+</div>
+<div class="card">
+<a href="https://pl.wikipedia.org/wiki/Sanok">
+<img src="Sanok.jpg" alt="Sanok">
+<h3>Sanok</h3>
+</a>
+</div>
+<div class="card">
+<a href="https://pl.wikipedia.org/wiki/Jas%C5%82o">
+<img src="Jasło.jpg" alt="Jasło">
+<h3>Jasło</h3>
+</a>
+</div>
+</div>
+</section>
+<section class="attractions">
+<h2>Gminy</h2>
+<div class="cards">
+    <div class="card">
+        <a href="https://pl.wikipedia.org/wiki/Przemy%C5%9Bl">
+            <img src="Przemyśl.jpg" alt="Przemyśl">
+            <h3>Gmina Miejska Przemyśl</h3>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://pl.wikipedia.org/wiki/Le%C5%BCajsk">
+            <img src="Leżajsk.jpg" alt="Leżajsk">
+            <h3>Gmina Miejska Leżajsk</h3>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://pl.wikipedia.org/wiki/Lubacz%C3%B3w">
+            <img src="Lubaczów.jpg" alt="Lubaczów">
+            <h3>Gmina Miejska Lubaczów</h3>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://pl.wikipedia.org/wiki/Ustrzyki_Dolne">
+            <img src="Ustrzyki Dolne (m-w).jpg" alt="Ustrzyki Dolne">
+            <h3>Gmina Ustrzyki Dolne (m-w)</h3>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://pl.wikipedia.org/wiki/Lesko">
+            <img src=" Lesko (m-w).jpg" alt="Lesko">
+            <h3>Gmina Lesko (m-w)</h3>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://pl.wikipedia.org/wiki/S%C4%99dzisz%C3%B3w_Ma%C5%82opolski">
+            <img src="Sędziszów Młp. (m-w).jpg" alt="Sędziszów Małopolski">
+            <h3>Gmina Sędziszów Młp. (m-w)</h3>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://pl.wikipedia.org/wiki/Gmina_Cisna">
+            <img src="Gmina Cisna (w).jpg" alt="Cisna">
+            <h3>Gmina Cisna (w)</h3>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://pl.wikipedia.org/wiki/Gmina_Czarna_(powiat_bieszczadzki)">
+            <img src="Gmina Czarna (w).jpg" alt="Czarna">
+            <h3>Gmina Czarna (w)</h3>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://pl.wikipedia.org/wiki/Gmina_%C5%81a%C5%84cut">
+            <img src="Gmina Łańcut (w).jpg" alt="Łańcut">
+            <h3>Gmina Łańcut (w)</h3>
+        </a>
+    </div>
+</div>
+</section>
+<footer>
+    &copy; 2025 Województwo Podkarpackie. Wszelkie prawa zastrzeżone.
+</footer>
+</body>
+</html>

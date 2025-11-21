@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia - Województwo Podkarpackie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background-color: #f4f6fb;
+      line-height: 1.8;
+    }
+
+   
+    .hero {
+      position: relative;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      color: #fff;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient,rgba(0, 0, 40, 0.8), rgba(0, 0, 40, 0.8);
+      z-index: 1;
+    }
+
+    .hero-img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      filter: brightness(50%);
+      transform: scale(1.05);
+      animation: zoom 18s ease-in-out infinite alternate;
+    }
+
+  
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 0 20px;
+      animation: fadeInUp 1.8s ease;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .hero-text h3 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #d8e3ff;
+      margin-bottom: 20px;
+      color : #ffd700;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      color: #e9f2ff;
+      
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      border-radius: 30px;
+      background: #f7c948;
+      color: #002b80;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #fff;
+      transform: scale(1.08);
+    }
+
+    
+    .info {
+      max-width: 1100px;
+      margin: 80px auto;
+      padding: 0 20px;
+      text-align: center;
+      animation: fadeIn 2s ease;
+    }
+
+    .info h2 {
+      font-size: 2.4rem;
+      color: #002b80;
+      margin-bottom: 25px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .info h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #f7c948;
+      margin: 12px auto 0 auto;
+      border-radius: 2px;
+    }
+
+    .info p {
+      font-size: 1.1rem;
+      color: #444;
+      text-align: justify;
+      line-height: 1.9;
+    }
+
+   
+    footer {
+      background: #002b80;
+      color: #fff;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.95rem;
+      margin-top: 60px;
+    }
+
+
+  </style>
+</head>
+<body>
+ 
+  <header class="hero">
+    <img src="podkarpacie.jpg" alt="Zamek w Podkarpaciu" class="hero-img">
+    <div class="hero-text">
+      <h1>Historia Podkarpacia</h1>
+      <h3>Od grodów po nowoczesność</h3>
+      <p>Podkarpacie to ziemia o bogatej przeszłości, gdzie tradycja spotyka się z duchem postępu.</p>
+      <a href="index.html" class="btn">Powrót na stronę główną</a>
+    </div>
+  </header>
+
+ 
+  <section class="info">
+    <h2>Historia Regionu</h2>
+    <p>
+      Podkarpacie, położone w południowo-wschodniej Polsce, od wieków było terenem pogranicza i przenikania się różnych kultur. 
+      W średniowieczu rozwijały się tu grody, m.in. w Przemyślu i Sanoku, a region włączony został do państwa polskiego. 
+      W kolejnych stuleciach Podkarpacie narażone było na liczne najazdy, ale jednocześnie kwitł handel i życie miejskie. 
+      Po rozbiorach ziemie te znalazły się w granicach monarchii austro-węgierskiej jako część Galicji, stając się miejscem 
+      odradzania polskiej kultury i ruchów niepodległościowych. W XX wieku region mocno ucierpiał podczas II wojny światowej, 
+      a po 1945 roku odbudował się, rozwijając m.in. przemysł lotniczy i metalowy. 
+      Dziś Podkarpacie znane jest z pięknych krajobrazów, turystyki w Bieszczadach, zabytków drewnianej architektury oraz 
+      nowoczesnej gospodarki opartej na lotnictwie i nowych technologiach.
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Województwo Podkarpackie | Projekt edukacyjny</p>
+  </footer>
+</body>
+</html>

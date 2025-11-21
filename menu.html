@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Nawigacyjne Shortcut</title>
+    <style>
+        /* Podstawowe resetowanie i style */
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        /* Stylizacja paska nawigacyjnego */
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Rozdziela logo od reszty menu */
+            align-items: center;
+            background-color: #172433; /* Ciemne tło */
+            color: #fff;
+            padding: 10px 20px;
+            height: 50px; /* Stała wysokość */
+        }
+
+        /* Stylizacja logo */
+        .logo-section {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo-section span {
+            margin-left: 8px;
+            font-size: 18px; /* Zmniejszenie czcionki 'Shortcut' */
+        }
+        
+        /* Sekcja linków menu */
+        .nav-links-left {
+            display: flex;
+            gap: 20px; /* Odstęp między linkami */
+            align-items: center;
+        }
+
+        .nav-links-right {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #a8b3c3; /* Jasnoszary kolor linków */
+            font-size: 14px;
+            padding: 5px 0;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: #fff; /* Biały kolor po najechaniu */
+        }
+        
+        /* Linki z rozwijaną listą (dropdown) */
+        .dropdown {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        
+        .dropdown-arrow::after {
+            content: '▼';
+            font-size: 8px;
+            margin-left: 5px;
+            vertical-align: middle;
+        }
+        
+        /* Przycisk "Switch now" */
+        .switch-button {
+            display: flex;
+            align-items: center;
+            background-color: #313d4f; /* Ciemniejszy, ale wyróżniający się kolor tła */
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .switch-button:hover {
+            background-color: #404f64;
+        }
+        
+        .switch-button .lightning-icon {
+            margin-right: 5px;
+            font-size: 16px; /* Symbol dla pioruna/switcha */
+        }
+
+        /* Przycisk "Sign up for FREE" */
+        .signup-button {
+            background-color: #4a90e2; /* Niebieski kolor przycisku */
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .signup-button:hover {
+            background-color: #3a7acb;
+        }
+
+        /* Sekcja grupowania linków i przycisków */
+        .nav-group {
+            display: flex;
+            align-items: center;
+            gap: 30px; /* Odstęp między grupami (linki vs sign in/up) */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-group">
+        <div class="logo-section">
+            <span style="color: #4a90e2;">&#x2699;</span> <span>Shortcut</span>
+        </div>
+
+        <div class="nav-links-left">
+            <a href="#" class="nav-link">The Shortcut Way</a>
+            <div class="dropdown nav-link dropdown-arrow">Features</div>
+            <a href="#" class="nav-link">Pricing</a>
+            <div class="dropdown nav-link dropdown-arrow">Resources</div>
+        </div>
+    </div>
+
+    <div class="nav-links-right">
+        <div class="switch-button dropdown-arrow">
+            <span class="lightning-icon">⚡</span>
+            Switch now
+        </div>
+        <a href="#" class="nav-link">Sign in</a>
+        <a href="#" class="signup-button">Sign up for FREE</a>
+    </div>
+</nav>
+
+<div style="background-color: white; height: 300px; width: 100%;"></div>
+
+</body>
+</html>
